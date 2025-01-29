@@ -1,0 +1,99 @@
+\documentclass[12pt,a4paper]{report}
+
+%\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+%\usepackage{pbox}
+\usepackage{verbatim}
+%\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[font=footnotesize,labelfont=bf,format=hang]{caption}
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\textheight}{9.2in}
+\setlength{\textwidth}{6.1in}
+\addtolength{\leftmargin}{-0.1in}
+\titlespacing*{\chapter}{0pt}{-20pt}{30pt}
+\topmargin -0.2in
+\onehalfspacing
+
+\begin{document}
+
+\pagenumbering{roman}
+\include{seminartitle}
+\include{certificate}
+\thispagestyle{empty}
+
+\addcontentsline{toc}{section}{Acknowledgment}
+\include{Acknlg}
+\addcontentsline{toc}{section}{Internship Completion Certificate}
+\include{abstract}
+
+
+\tableofcontents
+\newpage
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+
+\newpage
+\addcontentsline{toc}{section}{List of Table}
+\listoftables
+
+\newpage
+
+\pagestyle{fancy}
+\fancyhead[RO]{\footnotesize{\textit{Internship Report}}}
+\fancyhead[LO]{\footnotesize{\textit{}}}
+\renewcommand{\footrulewidth}{0.5pt}
+\fancyfoot[LO]{\footnotesize{\textit{Department of ccomputer Engineering, SIEM, Nashik}}}
+\fancyfoot[RO]{\footnotesize{\textit{\thepage }}}
+\cfoot{}
+
+\pagenumbering{arabic}
+\include{intro}
+\include{literature}
+
+\include{systemdevelopment}
+
+\include{Systemdesign}
+
+\include{conclusion}
+
+
+\footnotesize 
+\addcontentsline{toc}{section}{References}
+\renewcommand\bibname{References}
+\begin{thebibliography}{1}
+
+
+\bibitem{1}
+Baiskar, Y., Paulzagade, P., Koradia, K., Ingole, P., Shirbhate, D. (2022). MERN: A Full-Stack Development. International Journal for Research in Applied Science  Engineering Technology, 10(1), 1029. https://www.ijraset.com
+
+\bibitem{2}
+Dalmia, A.,  Chowdary, A. R. (2020). The new era of full stack development: Introduction of cloud and its impacts. International Journal of Engineering Research  Technology, 9(4). https://www.ijert.org
+\bibitem{3}
+https://www.javatpoint.com/html-structure
+\bibitem{4}
+https://internship.caygnus.com/about-us
+\bibitem{5}
+https://iconline.ipleiria.pt/bitstream/10400.8/9500/1/Web-Development.pdf
+\bibitem{6}
+https://youtu.be/EkRuAOsmXm0?si=8D4mBopLBPgYP9h9
+\bibitem{7}
+https://youtu.be/Dtb3DdSvYRY?si=iR07NMZPdWzVcWDB
+\bibitem{8}
+https://youtu.be/IKOwKiVt-x8?si=CKXno7TQWwXLJ-7J
+\end{thebibliography}
+\normalsize
+
+\include{plag}
+
+
+\end{document}
